@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New User</title>
+</head>
+<body>
+  <h1>User Creation</h1>
+  <form action="http://localhost:3000/create-user" method="post" enctype="application/x-www-form-urlencoded">
+    <label for="newUsername">New Username:</label>
+    <input type="text" name="newusername" required>
+    <br>
+    <label for="newPassword">New Password:</label>
+    <input type="password" name="newpassword" required>
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" name="newemail" required>
+    <br>
+    <label for="firstName">First Name:</label>
+    <input type="text" name="newfirstname" required>
+    <label for="lastName">Last Name:</label>
+    <input type="text" name="newlastname" required>
+    <button type="submit">Create User</button>
+  </form>
+</body>
+</html>

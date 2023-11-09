@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+    <h2>Welcome back <span id="usernamePlaceholder"></span></h2>
+    <p>add extra user content here</p>
+    <a href="/logout"><button>Logout</button></a>
+<script>
+    const username = '{{ username }}'; // Retrieve the username from the server
+    document.getElementById('usernamePlaceholder').textContent = username;
+</script>
+</body>
+</html>
